@@ -1,0 +1,198 @@
+.bento {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-16);
+}
+
+.bento .parte-superior {
+    display: flex;
+    gap: var(--espaco-16);
+}
+
+@media (max-width: 393px) {
+    .bento .parte-superior {
+        flex-direction: column;
+        flex: 1;
+        gap: var(--espaco-12);
+    }
+}
+
+.bento .parte-superior .quem-sou-eu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--cal);
+    background-color: var(--anil);
+    border-radius: var(--raio-32);
+    flex: 1;
+    overflow: hidden;
+}
+
+.bento .parte-superior .quem-sou-eu .conteudo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-16);
+    padding: var(--espaco-32);
+}
+
+@media (max-width: 393px) {
+    .bento .parte-superior .quem-sou-eu .conteudo {
+        padding: var(--espaco-24);
+    }
+}
+
+.bento .parte-superior .quem-sou-eu .conteudo .etiqueta {
+    width: fit-content;
+    display: flex;
+    background-color: var(--cal);
+    color: var(--anil);
+    padding-inline: var(--espaco-16);
+    padding-bottom: var(--espaco-4);
+    padding-top: var(--espaco-4);
+    border-radius: var(--raio-pill);
+    gap: var(--espaco-8);
+    align-items: center;
+}
+
+@media (max-width: 393px) {
+    .bento .parte-superior .quem-sou-eu .conteudo .etiqueta {
+        width: stretch;
+    }
+}
+
+.bento .parte-superior .quem-sou-eu .conteudo .etiqueta div {
+    width: 8px;
+    height: 8px;
+    border-radius: var(--raio-pill);
+    background-color: var(--sol);
+}
+
+.quem-sou-eu .conteudo .etiqueta p {
+    font-family: var(--fonte-mono);
+    font-size: var(--texto-12);
+    text-transform: uppercase;
+    font-weight: var(--peso-regular);
+}
+
+.quem-sou-eu .conteudo h1 {
+    font-family: var(--fonte-display);
+    font-size: var(--texto-88);
+    line-height: 0.95;
+}
+
+@media (max-width: 393px) {
+    .quem-sou-eu .conteudo h1 {
+        font-size: var(--texto-56);
+    }
+}
+
+.quem-sou-eu .conteudo p {
+    font-family: var(--fonte-texto);
+    font-size: var(--texto-19);
+}
+
+.texto-apoio {
+    font-family: var(--fonte-mono) !important;
+    font-size: var(--texto-16) !important;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    font-weight: var(--peso-regular) !important;
+}
+
+.quem-sou-eu__azulejo {
+  height: 100px;   /* a altura de um azulejo */
+  background-image: url("../assets/flor.svg"), url("../assets/estrela.svg");
+  background-size: 200px 100px;
+  background-position: 0 0, 100px 0;
+  background-repeat: repeat-x;
+}
+
+.bento .parte-superior .fotos-e-contato {
+    display: flex;
+    gap: var(--espaco-16);
+    flex: 1;
+}
+
+@media (max-width: 393px) {
+    .bento .parte-superior .fotos-e-contato {
+        flex-direction: column;
+    }
+}
+
+.bento .parte-superior .fotos-e-contato .fotos {
+    display: flex;
+    gap: var(--espaco-16);
+    flex-direction: column;
+}
+
+.parte-superior .fotos-e-contato .contatos {
+    background-color: var(--coral);
+    display: flex;
+    flex-direction: column;
+    padding: var(--espaco-24);
+    border-radius: var(--raio-32);
+    justify-content: space-between;
+    flex: 1;
+    color: var(--tinta);
+}
+
+@media (max-width: 393px) {
+    .bento .parte-superior .fotos-e-contato .fotos {
+        flex-direction: row;
+        flex: 1;
+        min-width: 0;
+        gap: var(--espaco-12);
+    }
+
+    .bento .parte-superior .fotos-e-contato .fotos img {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .parte-superior .fotos-e-contato .contatos {
+        gap: var(--espaco-24);
+    }
+}
+
+.fotos-e-contato .contatos .contatos-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-12);
+}
+
+.titulo {
+    font-family: var(--fonte-display);
+    font-size: var(--texto-32);
+}
+
+.contatos .contatos-header p {
+    font-family: var(--fonte-display);
+    font-size: var(--texto-22);
+    font-weight: var(--peso-semibold);
+    text-decoration: underline;
+    text-underline-offset: var(--espaco-4);
+    overflow-wrap: break-word;
+}
+
+.fotos-e-contato .contatos .redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-8);
+}
+
+.contatos .redes-sociais .card {
+    display: flex;
+    background-color: var(--cal);
+    padding-inline: var(--espaco-16);
+    padding-top: var(--espaco-12);
+    padding-bottom: var(--espaco-12);
+    border-radius: var(--raio-20);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redes-sociais .card p {
+    font-family: var(--fonte-texto);
+    font-size: var(--texto-16);
+    font-weight: var(--peso-semibold);
+}

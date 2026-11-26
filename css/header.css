@@ -1,0 +1,24 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: var(--espaco-8);
+}
+
+header .nav {
+    display: flex;
+    gap: var(--espaco-24);
+}
+
+@media (max-width: 393px) {
+    header .nav {
+        gap: var(--espaco-16);
+    }
+}
+
+header .nav p {
+    font-family: var(--fonte-mono);
+    text-transform: uppercase;
+    color: var(--tinta);
+    font-size: var(--peso-regular);
+}

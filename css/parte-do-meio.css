@@ -1,0 +1,86 @@
+.bento .parte-do-meio .container {
+    display: flex;
+    gap: var(--espaco-16);
+}
+
+.parte-do-meio .container div {
+    padding: var(--espaco-24);
+}
+
+.parte-do-meio .container .o-que-faco {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: var(--branco);
+    border-radius: var(--raio-32);
+    gap: var(--espaco-12);
+    color: var(--tinta);
+}
+
+.container .o-que-faco p {
+    font-family: var(--fonte-texto);
+    font-size: var(16);
+}
+
+.container .o-que-faco .tabs {
+    padding: 0px;
+    display: flex;
+    gap: var(--espaco-8);
+    color: var(--anil);
+}
+
+.o-que-faco .tabs p {
+    font-size: var(--texto-14);
+    font-weight: var(--peso-semibold);
+    padding-inline: var(--espaco-12);
+    padding-top: var(--espaco-4);
+    padding-bottom: var(--espaco-4);
+    border: solid var(--anil) 1px;
+    border-radius: var(--raio-pill);
+}
+
+.parte-do-meio .container .o-que-estou-aprendendo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.parte-do-meio .container .o-que-estou-aprendendo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background-color: var(--sol);
+    border-radius: var(--raio-32);
+    gap: var(--espaco-12);
+    color: var(--tinta);
+}
+
+.container .o-que-estou-aprendendo .mini-cards {
+    padding: 0px;
+    display: flex;
+    gap: var(--espaco-8);
+}
+
+.container .o-que-estou-aprendendo .mini-cards div {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-4);
+    padding: var(--espaco-12);
+    border: solid var(--tinta) 2px;
+    border-radius: var(--raio-20);
+
+}
+
+.mini-cards div .texto-apoio {
+    color: var(--anil);
+}
+
+.mini-cards div h5 {
+    font-family: var(--fonte-display);
+    font-size: var(--texto-19);
+}
+
+.container .o-que-estou-aprendendo p {
+    font-family: var(--fonte-texto);
+}
+
