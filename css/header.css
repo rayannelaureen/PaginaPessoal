@@ -10,15 +10,16 @@ header .nav {
     gap: var(--espaco-24);
 }
 
-@media (max-width: 393px) {
-    header .nav {
-        gap: var(--espaco-16);
-    }
-}
-
 header .nav p {
     font-family: var(--fonte-mono);
     text-transform: uppercase;
     color: var(--tinta);
     font-size: var(--peso-regular);
 }
+
+@media (max-width: 393px) {
+    header .nav {
+        gap: var(--espaco-16);
+    }
+}
+

@@ -1,0 +1,128 @@
+.bento .parte-inferior {
+    display: flex;
+    gap: var(--espaco-16);
+    color: var(--tinta);
+}
+
+.bento .parte-inferior .projetos-html-css {
+    display: flex;
+    flex: 1;
+    padding: var(--espaco-24);
+    background-color: var(--concha);
+    border-radius: var(--raio-32);
+    gap: var(--espaco-24);
+}
+
+.parte-inferior .projetos-html-css .conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--espaco-12);
+}
+
+.projetos-html-css .conteudo .textos {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-12);
+}
+
+.conteudo .textos p {
+    font-family: var(--fonte-texto);
+}
+
+.projetos-html-css .conteudo .botoes {
+    display: flex;
+    gap: var(--espaco-8);
+}
+
+.conteudo .botoes p {
+    font-family: var(--fonte-texto);
+    padding-inline: var(--espaco-16);
+    padding-top: var(--espaco-12);
+    padding-bottom: var(--espaco-12);
+    border: solid var(--anil) 2px;
+    border-radius: var(--raio-pill);
+    color: var(--anil);
+    font-weight: var(--peso-semibold);
+}
+
+.botoes .botao-preenchido {
+    background-color: var(--anil);
+    color: var(--cal) !important;
+}
+
+.bento .parte-inferior .rascunho-e-sobre {
+    display: flex;
+    flex: 1;
+    padding: var(--espaco-24);
+}
+
+.bento .parte-inferior .rascunho-e-sobre {
+    display: flex;
+    gap: var(--espaco-16);
+    padding: 0px;
+}
+
+.parte-inferior .rascunho-e-sobre .rascunho {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: var(--espaco-12);
+    background-color: var(--branco);
+    padding: var(--espaco-24);
+    border-radius: var(--raio-32);
+}
+
+.rascunho-e-sobre .rascunho p {
+    font-family: var(--fonte-texto);
+}
+
+.parte-inferior .rascunho-e-sobre .sobre-a-pagina {
+    display: flex;
+    flex-direction: column;
+    padding: var(--espaco-24);
+    background-color: var(--lavanda);
+    border-radius: var(--raio-32);
+    justify-content: space-between;
+    flex: 1;
+    gap: var(--espaco-12);
+}
+
+.rascunho-e-sobre .sobre-a-pagina p {
+    font-family: var(--fonte-texto);
+    text-decoration: underline;
+}
+
+.rascunho-e-sobre .sobre-a-pagina .header-texto {
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-12);
+}
+
+.sobre-a-pagina .header-texto h3 {
+    font-size: var(--texto-22);
+}
+
+.rascunho-e-sobre .sobre-a-pagina .ver-codigo {
+    display: flex;
+    flex-direction: row;
+    gap: var(--espaco-4);
+}
+
+@media (max-width: 393px) {
+    .bento .parte-inferior {
+        flex-direction: column;
+    }
+
+    .bento .parte-inferior .projetos-html-css {
+        flex-direction: column;
+    }
+
+    .grafico img {
+        width: 100%;
+    }
+
+    .bento .parte-inferior .rascunho-e-sobre {
+        flex-direction: column;
+    }
+}

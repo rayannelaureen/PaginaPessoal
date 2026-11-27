@@ -84,3 +84,24 @@
     font-family: var(--fonte-texto);
 }
 
+@media (max-width: 393px) {
+    .bento .parte-do-meio .container {
+        flex-direction: column;
+    }
+
+    .container .o-que-estou-aprendendo .mini-cards {
+        flex-wrap: wrap;
+    }
+
+    .o-que-estou-aprendendo .mini-cards div {
+        flex: 1;
+    }
+
+    .container .o-que-faco .tabs {
+        flex-wrap: wrap;
+    }
+
+    .parte-do-meio .container .o-que-faco {
+        order: 2;
+    }
+}

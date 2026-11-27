@@ -1,0 +1,7 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: var(--espaco-12);
+    font-family: var(--fonte-texto);
+    color: var(--tinta);
+}
